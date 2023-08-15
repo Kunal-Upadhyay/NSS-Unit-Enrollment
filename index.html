@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    
+
+    <link rel="shortcut icon" href="Logo.png" type="image/x-icon">
+    <title>NSS Registratiodn </title>
+</head>
+
+<script>
+    var subbmited=false;
+</script>
+<iframe src="" frameborder="0" name="hdcrm" id="hdcrm" style="display: none;" onload="if(subbmited){window.location='End.html';}"></iframe>
+<body>
+	<header>
+		<div style="display: flex; margin: 20px; align-items: center;">
+			<img src="Logo.png">
+			<div>
+				<h1>NSS UNIT</h1>
+				<p style="letter-spacing: 2px;">Enrollment</p>
+			</div>
+		</div>
+        <img src="1669117148833.png" alt="Uniform unit" style="height: 90px;object-fit: cover;object-position: 0px 10px;">
+	</header>
+
+<!--
+
+    https://docs.google.com/forms/d/e/1FAIpQLSeSh59OYXbCTTyynDZXHo88CoE0btnkSGeQpxs6x3BeVa9-4g/viewform
+    ?usp=pp_url&
+    entry.1500898409=Kunal&
+    entry.286145483=abc@xyz.com&
+    entry.1597630318=966699966&
+    entry.736929645=2023-12-12&
+    entry.1742369575=yes
+-->
+    <main>
+        <div id="T&C">
+            <article style="padding: 50px;padding-bottom: 0px;">
+                <h2>Terms and Conditions</h2>
+                <br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique repudiandae, accusamus facilis est reiciendis quae? Animi natus quasi nihil excepturi dolores porro hic sit, perspiciatis beatae incidunt nam tenetur necessitatibus recusandae pariatur quia veritatis? Voluptates magnam, odit consequatur eos nesciunt error distinctio reprehenderit soluta? Similique fugit aliquid ipsa! Nesciunt, similique?</p>
+            </article>
+            <button onclick="tctfrm()">Agree & Continue</button>
+        </div>
+
+        <div class="cont" id="main">
+
+        
+        
+        <form action="https://docs.google.com/forms/d/e/1FAIpQLSeSh59OYXbCTTyynDZXHo88CoE0btnkSGeQpxs6x3BeVa9-4g/formResponse" target="hdcrm" onsubmit="subbmited=true" method="post">
+            <div class="coolinput">
+                <label for="input" class="text">Full Name</label>
+                <input type="text" placeholder="Name" name="entry.1500898409" class="input" required="1">
+            </div>
+            <div class="coolinput">
+                <label for="input" class="text">Email</label>
+                <input type="email" placeholder="email@xyz.com" name="entry.286145483" class="input" required="1">
+            </div>
+            <div class="coolinput">
+                <label for="input" class="text">Mobile No.</label>
+                <input type="tel" placeholder="+91 XXX XXXX XXX" name="entry.1597630318" class="input" required="1">
+            </div>
+
+            <div class="coolinput">
+                <label for="input" class="text">Date of Birth</label>
+                <input type="date" name="entry.736929645" class="input" required="1">
+            </div>
+
+            <div class="coolinput">
+                <label for="input" class="text">Reason</label>
+                <textarea name="entry.1742369575" id="" cols="30" rows="10" placeholder="Why do you want to join UNIFORM UNIT ? Write here..." class="input"></textarea>            
+            </div>
+
+
+            <button type="submit">
+                Submit
+            </button>
+        </form>
+    </div>
+    </main>
+
+    <footer>
+        # DEVLOPED IN INDIA
+    </footer>
+</body>
+<script>
+    let tnc=document.getElementById("T&C");
+    let mnf=document.getElementById("main");
+    function tctfrm(){
+        tnc.style.display="none";
+        mnf.style.display="block";
+    }
+</script>
+</html>

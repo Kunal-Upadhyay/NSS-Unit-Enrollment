@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Merriweather:wght@500&family=Signika:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url("bg.jpg");
+    background-size: cover;
+    background-position: -150px;
+}
+header{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	height: 80px;
+	background-color: #2e3192;
+	color: white;
+	position: fixed;
+	width: 100%;
+	border-bottom: 4px solid #ed1c24;
+  z-index: 1;
+  overflow: hidden;
+}
+header h1{
+	letter-spacing: 7px;
+}
+header img{
+	height: 55px;
+	filter: drop-shadow(0px 0px 2px white);
+}
+header div div{
+	margin-left: 20px;
+	font-family: 'Fredoka One', cursive;
+}
+
+main{
+    padding-top: 11vh;
+    font-family: sans-serif;
+}
+.cont{
+    width: 60%;
+    margin: 0 auto;
+    border-radius: 5px;
+    display: none;
+}
+form{
+    margin: 50px auto;
+    background-color: rgba(46, 49, 146,0.7);
+    width: 100%;
+    padding-block: 1px;
+    border-radius: 5px;
+    box-shadow: #818CF8 0px 0px 10px 1px;
+    backdrop-filter: blur(5px);
+}
+
+.coolinput {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    position: static;
+    max-width: 240px;
+    margin: 0 auto;
+    margin-block: 50px;
+  }
+  
+.coolinput label.text {
+    font-size: 0.85rem;
+    color: #66b0ac;
+    font-weight: 700;
+    position: relative;
+    top: 0.5rem;
+    margin: 0 0 0 7px;
+    padding: 2px 4px;
+    background: white;
+    width: fit-content;
+    border: #66b0ac 1px solid;
+    border-radius: 4px;
+  }
+  
+.coolinput .input {
+    padding: 11px 10px;
+    font-size: 1rem;
+    border: 2px #66b0ac solid;
+    border-radius: 5px;
+  }
+  
+.coolinput .input:focus {
+    outline: none;
+}
+
+button{
+    width: 140px;
+    padding-block: 15px;
+    text-align: center;
+    border:2px solid #487674;
+    border-bottom:5px solid #487674;
+    padding: 10px;
+    border-radius: 40px;
+    background-color: white;
+    color: #487674;
+    display: block;
+    margin: 40px auto;
+}
+button:hover{
+    background-color: #487674;
+    color: white;
+}
+
+footer{
+    text-align: center;
+    background-color: #e8e8e8;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+@media screen and (max-width: 500px) {
+  header h1{
+    font-size: x-large;
+  }
+  header p{
+    font-size:small;
+  }
+  header img{
+    height: 45px;
+  }
+  header div div{
+    margin-left: 12px;
+  }
+  .cont{
+    width: 90%;
+    margin: 0 auto;
+    border-radius: 5px;
+}
+}
